@@ -130,7 +130,12 @@ export function Testimonials() {
         </motion.div>
       </div>
       <div className="mt-6 flex justify-center">
-        <button className="mt-6 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full hover:shadow-lg hover:shadow-purple-500/50 transition-all">
+        <button className="mt-6 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full hover:shadow-lg hover:shadow-purple-500/50 transition-all"
+        onClick={() => {
+          document.getElementById('form')?.scrollIntoView({
+            behavior: 'smooth', // Smooth scroll animation
+          });
+        }}>
           Book Now
         </button>
       </div>

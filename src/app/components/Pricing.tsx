@@ -164,6 +164,11 @@ export function Pricing() {
                     ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:shadow-lg hover:scale-105'
                     : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
                 }`}
+                onClick={() => {
+                  document.getElementById('form')?.scrollIntoView({
+                    behavior: 'smooth', // Smooth scroll animation
+                  });
+                }}
               >
                 Book Now
               </button>
